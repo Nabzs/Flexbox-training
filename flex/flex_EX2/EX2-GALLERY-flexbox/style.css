@@ -1,0 +1,54 @@
+html, body {
+    margin:0;
+    padding: 0;
+}
+body {
+    font-family: georgia, serif;
+    font-size:1em;
+    background-color: black;
+}
+h1 {
+    text-align: center;
+    color:orangered
+}
+/*----- A vous ----*/
+
+.gallery{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery img{
+    width: 300px;
+    max-width: 500px;
+    margin: 5px;
+}
+
+.vegas{order:1;}
+.rouen-portrait{order:2;}
+
+@media screen and (min-width: 900px) {
+    
+    .gallery{
+        max-width: 770px;
+        border: 1px solid dimgrey;
+        padding:  0 5em ;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items:flex-end;
+        justify-content: center;
+    }
+
+    .gallery img{
+        flex: 0 1 250px;
+        transition-duration: 0.8s;
+    }
+
+    .gallery img:hover{
+        flex-grow: 1.5;
+    }
+
+}

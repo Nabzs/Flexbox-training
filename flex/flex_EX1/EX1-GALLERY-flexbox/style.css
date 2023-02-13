@@ -1,0 +1,67 @@
+/* NE PAS MODIFIER */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: 0.625em; /*pour 1em = 10px */
+}
+body {
+    font: 1.4em/1.6em georgia, sans-serif;
+    background-color: linen;
+}
+header nav {
+    padding:20px
+}
+header nav ul li {
+    border: solid cadetblue;
+    border-width:1px 0;
+    border-right:1px solid white;
+    background-color: cadetblue;
+}
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/*---- À vous ! ---*/
+
+header nav ul{
+    margin: auto;
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+header nav ul li{
+    flex: 0 0 auto;
+    transition-duration: 0.8s;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+header nav ul li:first-of-type{
+    border: 1px solid cadetblue;
+    border-radius: 5px 0 0 5px;
+}
+
+header nav ul li:last-of-type{
+    border: 1px solid cadetblue;
+    border-radius: 0 5px 5px 0;
+}
+
+header nav li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 20px;
+}
+
+header nav ul li:hover{
+    flex-grow: 1;
+    background-color: linen;
+}
+
+header nav ul li a:hover{
+    color: cadetblue;
+}
